@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<!--  Link to the CSS -->
+<head>
+  <title>Project SKO</title>
+  <link rel="stylesheet" type="text/css" href="css/project.css">
+</head>
+
+<body>
+
+<!--  Header Links : Data Source -->
+<div class="dropdown">
+  <button class="dropbtn">Data Source</button>
+  <div class="dropdown-content">
+    <a href="https://aws.amazon.com/datasets/enron-email-data/">Enron Emails</a>
+  </div>
+</div>
+
+
+<!--  Title of the page -->
+ 
+<br> <br> <br> <br> <br> 
+<h1>Amazon SageMaker and EMR</h1><br>
+<h2>End to End Integration</h2>
+
+<!--  Text Area Box -->
+
+<form class="form" name='raw_data' action="CHALICE_URL" method=POST>
+  <!-- Content:<br> -->
+  <textarea class="textarea" rows=15, cols=120 name="raw_text" placeholder="Enter content here ..."></textarea>
+  <br><br>
+  <!-- <input type="submit" value="Classify"> -->
+
+  <!-- Submit Button -->
+
+
+    <button formaction="CHALICE_URL" class="button">Get Recommendations!</button>
+
+</form> 
+
+</body>
+
+
+</html>

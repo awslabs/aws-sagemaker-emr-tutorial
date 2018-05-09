@@ -1,0 +1,4 @@
+boto3==1.5.12
+flask==0.12.2
+pandas
+requests
