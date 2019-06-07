@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!--  Link to the CSS -->
+<head>
+  <title>Delivery Kit: Structured data</title>
+  <link rel="stylesheet" type="text/css" href="../project.css">
+
+</head>
+
+
+<!--  Header Links : Author -->
+
+<div class="dropdown">
+  <button class="dropbtn">Author</button>
+  <div class="dropdown-content">
+    <a href="https://phonetool.amazon.com/users/sahupran">Pranati Sahu</a>
+    <a href="https://phonetool.amazon.com/users/thmashu">Thomas Hughes</a>
+  </div>
+</div>
+
+<!--  Header Links : Data Source -->
+<div class="dropdown">
+  <button class="dropbtn">Data Source</button>
+  <div class="dropdown-content">
+    <a href="https://archive.ics.uci.edu/ml/datasets/car+evaluation">UCI Car Evaluation Data</a>
+  </div>
+</div>
+
+<!--  Title of the page -->
+
+<br> <br> <br> <br> <br>
+<h1>  Serverless Machine Learning for Structured Data </h1>
+<br> <br> <br>
+<!--  User Input Form -->
+
+<body>
+<form method="post" action="CHALICE_ENDPOINT">
+Select model input parameters: <br> <br>
+buying:
+  <select name="buying">
+    <option value="vhigh">vhigh</option>
+    <option value="high">high</option>
+    <option value="med">med</option>
+    <option value="low">low</option>
+  </select><br>
+
+maint:
+<select name="maint">
+  <option value="vhigh">vhigh</option>
+  <option value="high">high</option>
+  <option value="med">med</option>
+  <option value="low">low</option>
+</select><br>
+
+doors:
+<select name="doors">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5more">5more</option>
+</select><br>
+
+
+persons:
+<select name="persons">
+  <option value="2">2</option>
+  <option value="4">4</option>
+  <option value="more">more</option>
+</select><br>
+
+lug_boot:
+<select name="lug_boot">
+  <option value="small">small</option>
+  <option value="med">med</option>
+  <option value="big">big</option>
+</select><br>
+
+safety:
+<select name="safety">
+  <option value="low">low</option>
+  <option value="med">med</option>
+  <option value="high">high</option>
+</select><br><br><br>
+
+<!--input type="submit" value="Submit"-->
+<button formaction="CHALICE_URL" class="button">Let's Classify!</button>
+</form>
+
+</body>
+
+</html>
